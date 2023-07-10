@@ -8,14 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		A866E4B72A5BB8E900E7399F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A866E4B62A5BB8E900E7399F /* AppDelegate.swift */; };
-		A866E4B92A5BB8E900E7399F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A866E4B82A5BB8E900E7399F /* SceneDelegate.swift */; };
 		A866E4BB2A5BB8E900E7399F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A866E4BA2A5BB8E900E7399F /* ViewController.swift */; };
-		A866E4BE2A5BB8E900E7399F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A866E4BC2A5BB8E900E7399F /* Main.storyboard */; };
 		A866E4C02A5BB8EB00E7399F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A866E4BF2A5BB8EB00E7399F /* Assets.xcassets */; };
-		A866E4C32A5BB8EB00E7399F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A866E4C12A5BB8EB00E7399F /* LaunchScreen.storyboard */; };
 		A866E4CE2A5BB8EB00E7399F /* MyConfigNetDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A866E4CD2A5BB8EB00E7399F /* MyConfigNetDemoTests.swift */; };
 		A866E4D82A5BB8EB00E7399F /* MyConfigNetDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A866E4D72A5BB8EB00E7399F /* MyConfigNetDemoUITests.swift */; };
 		A866E4DA2A5BB8EB00E7399F /* MyConfigNetDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A866E4D92A5BB8EB00E7399F /* MyConfigNetDemoUITestsLaunchTests.swift */; };
+		A866E4E72A5BFBD200E7399F /* MyStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A866E4E62A5BFBD200E7399F /* MyStateMachine.swift */; };
+		A866E4E92A5C3FC700E7399F /* InputPassWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A866E4E82A5C3FC700E7399F /* InputPassWordViewController.swift */; };
+		A866E4EB2A5C75B700E7399F /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A866E4EA2A5C75B700E7399F /* ConfigViewController.swift */; };
+		A866E4ED2A5C7C2A00E7399F /* WrongWifiInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A866E4EC2A5C7C2A00E7399F /* WrongWifiInfoViewController.swift */; };
+		A866E4EF2A5C7C3C00E7399F /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A866E4EE2A5C7C3C00E7399F /* SuccessViewController.swift */; };
+		A866E4F12A5C7C5000E7399F /* FailureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A866E4F02A5C7C5000E7399F /* FailureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,17 +41,20 @@
 /* Begin PBXFileReference section */
 		A866E4B32A5BB8E900E7399F /* MyConfigNetDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyConfigNetDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A866E4B62A5BB8E900E7399F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A866E4B82A5BB8E900E7399F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A866E4BA2A5BB8E900E7399F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A866E4BD2A5BB8E900E7399F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A866E4BF2A5BB8EB00E7399F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A866E4C22A5BB8EB00E7399F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A866E4C42A5BB8EB00E7399F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A866E4C92A5BB8EB00E7399F /* MyConfigNetDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyConfigNetDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A866E4CD2A5BB8EB00E7399F /* MyConfigNetDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyConfigNetDemoTests.swift; sourceTree = "<group>"; };
 		A866E4D32A5BB8EB00E7399F /* MyConfigNetDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyConfigNetDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A866E4D72A5BB8EB00E7399F /* MyConfigNetDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyConfigNetDemoUITests.swift; sourceTree = "<group>"; };
 		A866E4D92A5BB8EB00E7399F /* MyConfigNetDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyConfigNetDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A866E4E62A5BFBD200E7399F /* MyStateMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStateMachine.swift; sourceTree = "<group>"; };
+		A866E4E82A5C3FC700E7399F /* InputPassWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputPassWordViewController.swift; sourceTree = "<group>"; };
+		A866E4EA2A5C75B700E7399F /* ConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
+		A866E4EC2A5C7C2A00E7399F /* WrongWifiInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrongWifiInfoViewController.swift; sourceTree = "<group>"; };
+		A866E4EE2A5C7C3C00E7399F /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
+		A866E4F02A5C7C5000E7399F /* FailureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,11 +106,14 @@
 			isa = PBXGroup;
 			children = (
 				A866E4B62A5BB8E900E7399F /* AppDelegate.swift */,
-				A866E4B82A5BB8E900E7399F /* SceneDelegate.swift */,
 				A866E4BA2A5BB8E900E7399F /* ViewController.swift */,
-				A866E4BC2A5BB8E900E7399F /* Main.storyboard */,
+				A866E4EC2A5C7C2A00E7399F /* WrongWifiInfoViewController.swift */,
+				A866E4EE2A5C7C3C00E7399F /* SuccessViewController.swift */,
+				A866E4F02A5C7C5000E7399F /* FailureViewController.swift */,
+				A866E4EA2A5C75B700E7399F /* ConfigViewController.swift */,
+				A866E4E82A5C3FC700E7399F /* InputPassWordViewController.swift */,
+				A866E4E62A5BFBD200E7399F /* MyStateMachine.swift */,
 				A866E4BF2A5BB8EB00E7399F /* Assets.xcassets */,
-				A866E4C12A5BB8EB00E7399F /* LaunchScreen.storyboard */,
 				A866E4C42A5BB8EB00E7399F /* Info.plist */,
 			);
 			path = MyConfigNetDemo;
@@ -231,9 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A866E4C32A5BB8EB00E7399F /* LaunchScreen.storyboard in Resources */,
 				A866E4C02A5BB8EB00E7399F /* Assets.xcassets in Resources */,
-				A866E4BE2A5BB8E900E7399F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +266,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A866E4BB2A5BB8E900E7399F /* ViewController.swift in Sources */,
+				A866E4EF2A5C7C3C00E7399F /* SuccessViewController.swift in Sources */,
+				A866E4ED2A5C7C2A00E7399F /* WrongWifiInfoViewController.swift in Sources */,
+				A866E4E72A5BFBD200E7399F /* MyStateMachine.swift in Sources */,
+				A866E4E92A5C3FC700E7399F /* InputPassWordViewController.swift in Sources */,
+				A866E4F12A5C7C5000E7399F /* FailureViewController.swift in Sources */,
+				A866E4EB2A5C75B700E7399F /* ConfigViewController.swift in Sources */,
 				A866E4B72A5BB8E900E7399F /* AppDelegate.swift in Sources */,
-				A866E4B92A5BB8E900E7399F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,25 +307,6 @@
 			targetProxy = A866E4D42A5BB8EB00E7399F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		A866E4BC2A5BB8E900E7399F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A866E4BD2A5BB8E900E7399F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A866E4C12A5BB8EB00E7399F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A866E4C22A5BB8EB00E7399F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A866E4DB2A5BB8EB00E7399F /* Debug */ = {
@@ -441,8 +434,6 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyConfigNetDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -469,8 +460,6 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyConfigNetDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
