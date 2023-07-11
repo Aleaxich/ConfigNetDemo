@@ -9,8 +9,12 @@ import UIKit
 
 class ConfigViewController: UIViewController {
     
-    lazy var stateMachine = StateMachine.shared
-
+    var jumpToWrongInfoVC:(()->())?
+    
+    var jumpTpSuccseeVC:(()->())?
+    
+    var jumpToFailureVC:(()->())?
+    
     lazy var progress = UIProgressView(progressViewStyle: .default)
     
     var count:Double = 0
@@ -46,17 +50,19 @@ class ConfigViewController: UIViewController {
             if self!.count > 0.5 && self!.count < 0.6 {
                 if  UserDefaults.standard.value(forKey: "wifiName") as! String != "123" && UserDefaults.standard.value(forKey: "password") as! String  != "123" {
                     timer.invalidate()
-                    self!.stateMachine.trigger(event: .jumpToIllegalPasswordView)
+                    guard let action = self?.jumpToWrongInfoVC else { return }
+                    action()
                 }
                 self!.count += 0.01
                 self!.progress.progress = Float(self!.count)
             } else if self!.count  >= 1.0{
                 let num = Int(arc4random_uniform(100))
                 if (num % 2 == 0) {
-                    self!.stateMachine.trigger(event: .jumpToConfigSuccessView)
+                    guard let action = self?.jumpTpSuccseeVC else { return }
+                    action()
                 } else {
-                    self!.stateMachine.trigger(event: .jumpToConfigFailureView)
-
+                    guard let action = self?.jumpToFailureVC else { return }
+                    action()
                 }
                 timer.invalidate()
             } else {

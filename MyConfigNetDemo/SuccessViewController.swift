@@ -9,8 +9,7 @@ import UIKit
 
 class SuccessViewController: UIViewController {
     
-    lazy var stateMachine = StateMachine.shared
-
+    var close:(()->())?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,5 +26,19 @@ class SuccessViewController: UIViewController {
         titleLabel.text = "配网成功！"
         titleLabel.frame = CGRect(x: UIScreen.main.bounds.width / 2 - 100, y: 100, width: 200, height: 50)
         view.addSubview(titleLabel)
+        
+        let button = UIButton.init()
+        button.setTitle("退出配网流程", for: .normal)
+        button.setTitleColor(UIColor.black, for: .normal)
+        button.addTarget(self, action: #selector(clickButton), for: .touchUpInside)
+        button.frame = CGRect(x: UIScreen.main.bounds.width / 2 - 100, y: 200, width: 200, height: 50)
+        view.addSubview(button)
     }
+    
+    @objc func clickButton() {
+        guard let action = self.close else { return }
+        action()
+    }
+    
+    
 }

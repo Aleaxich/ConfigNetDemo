@@ -9,9 +9,9 @@ import UIKit
 
 class WrongWifiInfoViewController: UIViewController {
     
-    lazy var stateMachine = StateMachine.shared
-
-
+    var retry:(()->())?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = true;
@@ -36,7 +36,8 @@ class WrongWifiInfoViewController: UIViewController {
     }
     
     @objc func clickButton() {
-        stateMachine.trigger(event: ConfigEvent.jumpToInputPasswordView)
+        guard let action = self.retry else { return }
+        action()
     }
 
    

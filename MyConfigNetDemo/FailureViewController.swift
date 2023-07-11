@@ -9,8 +9,8 @@ import UIKit
 
 class FailureViewController: UIViewController {
     
-    lazy var stateMachine = StateMachine.shared
-
+    var retry:(()->())?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = true;
@@ -36,7 +36,8 @@ class FailureViewController: UIViewController {
     }
     
     @objc func clickButton() {
-        stateMachine.trigger(event: ConfigEvent.jumpToConfigView)
+        guard let action = retry else { return }
+        action()
     }
 
 }

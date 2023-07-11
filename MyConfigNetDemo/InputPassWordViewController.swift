@@ -15,6 +15,12 @@ public class InputPasswordViewController: UIViewController {
     lazy var wifiNameTextFiled = UITextField.init()
     
     lazy var passwordTextFiled = UITextField.init()
+    
+    // 点击下一步
+    var clickAction:(()->())?
+    
+    // 退出
+    var closeAction:(()->())?
 
 
     public override func viewDidLoad() {
@@ -50,12 +56,16 @@ public class InputPasswordViewController: UIViewController {
     }
     
     @objc func clickCloseButton() {
-        stateMachine.trigger(event: .jumpToSearchResultView)
+        guard let close = self.closeAction else { return }
+        close()
+        
+        
     }
     
     @objc func clickButton() {
         UserDefaults.standard.set(wifiNameTextFiled.text, forKey: "wifiName")
         UserDefaults.standard.set(passwordTextFiled.text, forKey: "password")
-        stateMachine.trigger(event: .jumpToConfigView)
+        guard let click = self.clickAction else { return }
+        click()
     }
 }

@@ -19,6 +19,7 @@
 		A866E4ED2A5C7C2A00E7399F /* WrongWifiInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A866E4EC2A5C7C2A00E7399F /* WrongWifiInfoViewController.swift */; };
 		A866E4EF2A5C7C3C00E7399F /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A866E4EE2A5C7C3C00E7399F /* SuccessViewController.swift */; };
 		A866E4F12A5C7C5000E7399F /* FailureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A866E4F02A5C7C5000E7399F /* FailureViewController.swift */; };
+		A866E4F32A5D036300E7399F /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A866E4F22A5D036300E7399F /* SearchResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		A866E4EC2A5C7C2A00E7399F /* WrongWifiInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrongWifiInfoViewController.swift; sourceTree = "<group>"; };
 		A866E4EE2A5C7C3C00E7399F /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
 		A866E4F02A5C7C5000E7399F /* FailureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailureViewController.swift; sourceTree = "<group>"; };
+		A866E4F22A5D036300E7399F /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			children = (
 				A866E4B62A5BB8E900E7399F /* AppDelegate.swift */,
 				A866E4BA2A5BB8E900E7399F /* ViewController.swift */,
+				A866E4F22A5D036300E7399F /* SearchResultViewController.swift */,
 				A866E4EC2A5C7C2A00E7399F /* WrongWifiInfoViewController.swift */,
 				A866E4EE2A5C7C3C00E7399F /* SuccessViewController.swift */,
 				A866E4F02A5C7C5000E7399F /* FailureViewController.swift */,
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A866E4BB2A5BB8E900E7399F /* ViewController.swift in Sources */,
+				A866E4F32A5D036300E7399F /* SearchResultViewController.swift in Sources */,
 				A866E4EF2A5C7C3C00E7399F /* SuccessViewController.swift in Sources */,
 				A866E4ED2A5C7C2A00E7399F /* WrongWifiInfoViewController.swift in Sources */,
 				A866E4E72A5BFBD200E7399F /* MyStateMachine.swift in Sources */,
